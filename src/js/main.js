@@ -57,7 +57,6 @@ function closeSidebar() {
   sidebar.style.transform = '';
   sidebarOverl.classList.add('hidden');
   
-  // إخفاء الـ display بعد انتهاء وقت الـ transition (مثلاً 300ms)
   setTimeout(() => {
       if (sidebarOverl.classList.contains('hidden')) {
           sidebarOverl.style.display = 'none';
@@ -466,7 +465,6 @@ function addproduct() {
 }
 addproduct();
 
-
 //display product
 function display() {
   let cartona = "";
@@ -536,8 +534,8 @@ function display() {
 display();
 
 function syncData() {
-  localStorage.setItem("allMeals", JSON.stringify(userMails)); // حفظ
-  display(); // عرض التحديث فوراً على الشاشة
+  localStorage.setItem("allMeals", JSON.stringify(userMails)); 
+  display(); 
 }
 
 //delete Mails
